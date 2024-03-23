@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Payment</title>
+  <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+  <header>
+    <h1>Event Payment</h1>
+  </header>
+  <main>
+    <section class="event-details">
+      <h2>Event Details</h2>
+      <ul>
+        <li>Event Name: [**Event Name Here**]</li>
+        <li>Date: [**Event Date Here**]</li>
+        <li>Time: [**Event Time Here**]</li>
+        <li>Location: [**Event Location Here**] (Optional)</li>
+      </ul>
+    </section>
+    <!-- <section class="ticket-selection">
+      <h2>Ticket Selection</h2>
+      <form action="#">
+        <div class="ticket-option">
+          <input type="radio" id="ticket-general" name="ticket_type" value="general">
+          <label for="ticket-general">General Admission (₹50)</label>
+        </div>
+        <div class="ticket-option">
+          <input type="radio" id="ticket-vip" name="ticket_type" value="vip">
+          <label for="ticket-vip">Student Access (Free)</label>
+        </div>
+        <p>**Note:** Select only one ticket for one single person.</p>
+        <div class="quantity">
+          <label for="quantity">Quantity:</label>
+          <input type="number" id="quantity" name="quantity" min="1" value="1">
+        </div>
+      </form>
+    </section> -->
+    <section class="payment-form">
+      <h2>Payment Information</h2>
+      <form action="#">  <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" name="card_number" required>
+        <label for="expiry-date">Expiry Date:</label>
+        <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/YY" required>
+        <label for="cvv">CVV:</label>
+        <input type="text" id="cvv" name="cvv" maxlength="3" required>
+        <button type="submit">Pay Now</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; <?php echo date("Y"); ?> All Rights Reserved</p>
+  </footer>
+</body>
+</html>
